@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        
+        body {
+            max-width: 100%
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 33%;
+            margin-bottom: 16px;
+            padding: 5px 10px;
+        }
+        
+        @media screen and (max-width: 670px) {
+            .column {
+                width: 100%;
+                text-align: none;
+            }
+        }
+        
+        .card {
+            border: 1px solid black;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .fa {
+            margin: 10px;
+            font-size: 68px;
+        }
+        
+        .fa:hover {
+            transform: rotateY(180deg);
+            transition: transform 0.8s;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .button {
+            border: none;
+            padding: 8px;
+            color: white;
+            background-color: #9d4744;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .button:hover {
+            background-color: green;
+        }
+        
+        #gfg {
+            float: none;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Meet The Team Page</h1>
+        <hr>
+
+        <!-- First member of the team -->
+        <div class="row">
+            <div class="column" id="gfg">
+                <div class="card">
+                    <i class="fa fa-user-circle" style="font-size:68px;"></i>
+                    <div class="container">
+                        <h2>Shubham Mhaske</h2>
+
+
+                        <p>CEO & Founder</p>
+
+
+
+
+                        <p>
+                            Feel your customer make them happy
+                        </p>
+
+
+                        <button class="button">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other members of the team -->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle" style="font-size:68px;"></i>
+                    <div class="container">
+                        <h2>Niraj Patil</h2>
+
+
+                        <p>Developer Head</p>
+
+
+
+
+                        <p>
+                            A website should be user-friendly and attractive
+                        </p>
+
+
+                        <button class="button">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle" style="font-size:68px;"></i>
+                    <div class="container">
+                        <h2>Harshal Pawar</h2>
+
+
+                        <p>Content Head</p>
+
+
+
+
+                        <p>
+                            Content should be popular and trending
+                        </p>
+
+
+                        <button class="button">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle" style="font-size:68px;"></i>
+                    <div class="container">
+                        <h2>Vicky Mhaske</h2>
+
+
+                        <p>Marketing Head</p>
+
+
+
+
+                        <p>
+                            Sell the product like Greatest Mary Kay Ash
+                        </p>
+
+
+                        <button class="button">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
